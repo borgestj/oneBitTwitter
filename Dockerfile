@@ -12,7 +12,7 @@ RUN gem install rails:5.1.6
 # Seta o nosso path como o diretório principal
 WORKDIR $INSTALL_PATH
 # Copia o nosso Gemfile para dentro do container
-COPY Gemfile ./
+COPY Gemfile ./''
 # Seta o path para as Gems
 ENV BUNDLE_PATH /app-gems
 # Copia nosso código para dentro do container
